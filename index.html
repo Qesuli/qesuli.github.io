@@ -23,18 +23,18 @@
     <canvas id="canvas"></canvas>
     <script>
         // Get canvas and context
-        const canvas = document.getElementById("canvas");
-        const ctx = canvas.getContext("2d");
+        let canvas = document.getElementById("canvas");
+        let ctx = canvas.getContext("2d");
 
         // Set canvas dimensions
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
 
         // Set game variables
-        const paddleHeight = 260;
-        const paddleWidth = 40;
-        const paddleMargin = 22;
-        const ballRadius = 25;
+        let paddleHeight = 260;
+        let paddleWidth = 40;
+        let paddleMargin = 22;
+        let ballRadius = 25;
         let bounces = 0;
         
 
