@@ -119,7 +119,7 @@
             if (ball.y - ball.radius < 0 || ball.y + ball.radius > canvas.height) {
                 ball.dy = -ball.dy;
             }
-            if (ball.x + ball.radius > paddle.x && ball.x - ball.radius < paddle.x && ball.y + ball.radius > paddle.y && ball.y - ball.radius < paddle.y + paddle.height) {
+            if (ball.x + ball.radius > paddle.x && ball.x - ball.radius < paddle.x + 20 && ball.y + ball.radius > paddle.y && ball.y - ball.radius < paddle.y + paddle.height) {
                 ball.dx = -ball.dx;
                 bounces++;
             }
