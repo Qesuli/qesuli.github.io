@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Black and White Pong</title>
+    <title>Y4 Pong</title>
     <style>
         body {
             background-color: black;
@@ -36,14 +36,14 @@
         const paddleMargin = 22;
         const ballRadius = 25;
         let bounces = 0;
-        const img = document.getElementById("y4");
+        
 
         // Set initial ball position and velocity
         let ball = {
             x: canvas.width / 2,
             y: canvas.height / 2,
-            dx: 35,
-            dy: 37,
+            dx: 34,
+            dy: 32,
             radius: ballRadius,
         };
 
@@ -94,8 +94,8 @@
             // Reset ball position and velocity
             ball.x = canvas.width / 2;
             ball.y = canvas.height / 2;
-            ball.dx = 33;
-            ball.dy = 33;
+            ball.dx = 34;
+            ball.dy = 31;
 
             // Reset bounce counter
             bounces = 0;
